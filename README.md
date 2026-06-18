@@ -1,6 +1,6 @@
 # Android Privacy Network Connection Configurations
 
-Here's my current network connection configurations on Android 16. For app debloating, which is also important for privacy, refer to my [Samsung-Android-Debloat-List](https://github.com/Willie169/Samsung-Android-Debloat-List) repo if you are using Samsung phone.
+Here's my current network connection configurations on Android 16. For app debloating, which is also important for privacy, refer to my [**Samsung-Android-Debloat-List**](https://github.com/Willie169/Samsung-Android-Debloat-List) repo if you are using Samsung phone.
 
 ## Apps Configurations
 
