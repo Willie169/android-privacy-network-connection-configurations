@@ -11,7 +11,7 @@ Note that Termux and functions requiring accessibility services only work in Per
 - [Insular](https://gitlab.com/secure-system/Insular) (`com.oasisfeng.island.fdroid`) from [F-Droid](https://f-droid.org/packages/com.oasisfeng.island.fdroid) manages Work Profile. You can also use [Shelter](https://gitea.angry.im/PeterCxy/Shelter) (`net.typeblog.shelter`) from [F-Droid](https://droidify.app/app/?id=net.typeblog.shelter&repo_address=https://fdroid.typeblog.net). All apps with unwanted trackers are used in Personal Profile. Only
     trusted app are used in Work Profile. No account is in Work Profile. [Aurora Store](https://gitlab.com/AuroraOSS/AuroraStore) (`com.aurora.store`) from [F-Droid](https://f-droid.org/packages/com.aurora.store) is used to install apps from Google Play Store in it.
 - [TrackerControl (TC)](https://github.com/TrackerControl/tracker-control-android) (`net.kollnig.missioncontrol.fdroid`) from [F-Droid](https://f-droid.org/packages/net.kollnig.missioncontrol.fdroid) in Personal Profile as VPN of Personal Profile except the rare case of [Tailscale Personal Profile](#tailscale-personal-profile)
-  - Both Always-on VPN and Block connections without VPN turned on
+  - Both Always-on VPN and Block connections without VPN turned on, ignoring the notification from TrackerControl about turning Always-on VPN off
   - No app is excluded from VPN
   - Tracker blocker
   - UDP tracker blocker
