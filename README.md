@@ -2,11 +2,15 @@
 
 Here's my current network connection configurations on Android 16. For app debloating, which is also important for privacy, refer to my [**Samsung-Android-Debloat-List**](https://github.com/Willie169/Samsung-Android-Debloat-List) repo if you are using Samsung phone.
 
+It may be even better for privacy to switch Personal and Work profile below. There will likely not be any extra inconvenience than the configurations.
+
 ## Apps Configurations
 
-- [Insular](https://gitlab.com/secure-system/Insular) (`com.oasisfeng.island.fdroid`) from [F-Droid](https://f-droid.org/packages/com.oasisfeng.island.fdroid) manages Work Profile. You can also use [Shelter](https://gitea.angry.im/PeterCxy/Shelter) (`net.typeblog.shelter`) from [F-Droid](https://droidify.app/app/?id=net.typeblog.shelter&repo_address=https://fdroid.typeblog.net).
+- [Insular](https://gitlab.com/secure-system/Insular) (`com.oasisfeng.island.fdroid`) from [F-Droid](https://f-droid.org/packages/com.oasisfeng.island.fdroid) manages Work Profile. You can also use [Shelter](https://gitea.angry.im/PeterCxy/Shelter) (`net.typeblog.shelter`) from [F-Droid](https://droidify.app/app/?id=net.typeblog.shelter&repo_address=https://fdroid.typeblog.net). All apps with unwanted trackers are used in Personal Profile. Only
+    trusted app are used in Work Profile. No account is in Work Profile. [Aurora Store](https://gitlab.com/AuroraOSS/AuroraStore) (`com.aurora.store`) from [F-Droid](https://f-droid.org/packages/com.aurora.store) is used to install apps from Google Play Store in it.
 - [TrackerControl (TC)](https://github.com/TrackerControl/tracker-control-android) (`net.kollnig.missioncontrol.fdroid`) from [F-Droid](https://f-droid.org/packages/net.kollnig.missioncontrol.fdroid) in Personal Profile as VPN of Personal Profile except the rare case of [Tailscale Personal Profile](#tailscale-personal-profile)
   - Both Always-on VPN and Block connections without VPN turned on
+  - No app is excluded from VPN
   - Tracker blocker
   - UDP tracker blocker
   - Port forwarding: 53/UDP -> 5354, 53/TCP -> 5354, 853/UDP -> 5354, 853/TCP -> 5354
@@ -15,7 +19,8 @@ Here's my current network connection configurations on Android 16. For app deblo
     - Google Play Services, Google Services Framework, Google Play Store, Captive Portal Login, and MulticastDNSResponder: All the time.
     - Software update (which will also enable internet connection for a lot of Samsung apps): Only when downloading Software update.
 - [InviZible Pro: Tor & Firewall, DNSCrypt & I2P](https://github.com/Gedsh/InviZible) (`pan.alexander.tordnscrypt.stable`) from [F-Droid](https://f-droid.org/packages/pan.alexander.tordnscrypt.stable) proxy mode in Personal Profile
-  - Firewall: Only allow specific apps to access internet
+  - Both Always-on VPN and Block connections without VPN turned on
+  - Firewall: Only allow trusted apps to access internet
   - DNSCrypt server at port 5354
     - DNSCrypt servers: adguard-dns-unfiltered-doh/adguard-dns-unfiltered-doh-ipv6/cloudflare/cloudflare-ipv6
     - Bootstrap resolver: 1.1.1.1, 1.0.0.1, 2606:4700:4700::1111, 2606:4700:4700::1001, 94.140.14.140, 94.140.14.141, 2a10:50c0::1:ff, 2a10:50c0::2:ff
@@ -37,7 +42,6 @@ Here's my current network connection configurations on Android 16. For app deblo
   - Auth Password: (empty)
 - [Tailscale](https://github.com/tailscale/tailscale-android) (`com.tailscale.ipn`) from [F-Droid](https://f-droid.org/packages/com.tailscale.ipn) in Work Profile as VPN of Work Profile when using Tailscale
 - [InviZible Pro: Tor & Firewall, DNSCrypt & I2P](https://github.com/Gedsh/InviZible) (`pan.alexander.tordnscrypt.stable`) from [F-Droid](https://f-droid.org/packages/pan.alexander.tordnscrypt.stable) VPN mode in Work Profile as VPN of Work Profile when not using Tailscale
-  - Both Always-on VPN and Block connections without VPN turned on
   - DNSCrypt server at port 5355
     - DNSCrypt servers: adguard-dns-unfiltered-doh/adguard-dns-unfiltered-doh-ipv6/cloudflare/cloudflare-ipv6
     - Bootstrap resolver: 1.1.1.1, 1.0.0.1, 2606:4700:4700::1111, 2606:4700:4700::1001, 94.140.14.140, 94.140.14.141, 2a10:50c0::1:ff, 2a10:50c0::2:ff
