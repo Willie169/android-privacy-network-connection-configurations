@@ -2,9 +2,7 @@
 
 Here's my current network connection configurations on Android 16. For app debloating, which is also important for privacy, refer to my [**Samsung-Android-Debloat-List**](https://github.com/Willie169/Samsung-Android-Debloat-List) repo if you are using Samsung phone.
 
-It may be even better for privacy to switch Personal and Work profile below. There will likely not be any extra inconvenience than the configurations if decided during the initial phone setup.
-
-Note that Termux and functions requiring accessibility services only work in Personal Profile. You can access files in Work Profile via FTP server in apps such as [Material Files](https://github.com/zhanghai/MaterialFiles) from [F-Droid](https://f-droid.org/packages/me.zhanghai.android.files) in Work Profile, or ADB with Shizuku.
+It may be even better for privacy to switch Personal and Work profile below. Note that Termux and functions requiring accessibility services only work in Personal Profile. You can access files in Work Profile via FTP server in apps such as [Material Files](https://github.com/zhanghai/MaterialFiles) from [F-Droid](https://f-droid.org/packages/me.zhanghai.android.files) in Work Profile, or ADB with Shizuku.
 
 ## Apps Configurations
 
