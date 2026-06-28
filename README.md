@@ -19,7 +19,6 @@ It may be even better for privacy to switch Personal and Work profile below. Not
     - Google Play Services, Google Services Framework, Google Play Store, Captive Portal Login, and MulticastDNSResponder: All the time.
     - Software update (which will also enable internet connection for a lot of Samsung apps): Only when downloading Software update.
 - [InviZible Pro: Tor & Firewall, DNSCrypt & I2P](https://github.com/Gedsh/InviZible) (`pan.alexander.tordnscrypt.stable`) from [F-Droid](https://f-droid.org/packages/pan.alexander.tordnscrypt.stable) proxy mode in Personal Profile
-  - Both Always-on VPN and Block connections without VPN turned on
   - Firewall: Only allow trusted apps to access internet
   - DNSCrypt server at port 5354
     - DNSCrypt servers: adguard-dns-unfiltered-doh/adguard-dns-unfiltered-doh-ipv6/cloudflare/cloudflare-ipv6
