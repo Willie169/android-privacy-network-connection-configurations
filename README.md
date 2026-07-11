@@ -13,7 +13,7 @@ It may be even better for privacy to switch Personal and Work profile below. Not
   - No app is excluded from VPN
   - Tracker blocker
   - UDP tracker blocker
-  - Port forwarding: 53/UDP -> 5354, 53/TCP -> 5354, 853/UDP -> 5354, 853/TCP -> 5354
+  - Port forwarding: 53/UDP -> 5354, 53/TCP -> 5354
   - Socks5 proxy: -> 1080
   - You can see what domains each app (tried to) connect to in home page and log of connection attempts in three dots in the top right corner > Traffic log if enabled. I disabled internet connection for all system apps that do unnecessary internet connection. System apps that I didn't do so to avoid breaking things include:
     - Google Play Services, Google Services Framework, Google Play Store, Captive Portal Login, and MulticastDNSResponder: All the time.
@@ -58,7 +58,7 @@ It may be even better for privacy to switch Personal and Work profile below. Not
 
 ## Without Tor
 
-- Personal Profile DNS over UDP or TCP requests at port 53 or 853 -> TrackerControl port forwarding to port 5354 -> Personal Profile InviZible Pro DNSCrypt server at port 5354 outbound through Socks5 proxy at port 1080 -> Socks5 Sock5 server at port 1080 -> Work Profile VPN -> DNS resolved
+- Personal Profile DNS over UDP or TCP requests at port 53 -> TrackerControl port forwarding to port 5354 -> Personal Profile InviZible Pro DNSCrypt server at port 5354 outbound through Socks5 proxy at port 1080 -> Socks5 Sock5 server at port 1080 -> Work Profile VPN -> DNS resolved
 - Personal Profile other requests -> TrackerControl outbound through Socks5 proxy at port 1080 -> Socks5 Sock5 server at port 1080 -> Work Profile VPN -> Outbound
 - Work Profile requests -> Work Profile VPN -> Outbound
 
@@ -66,7 +66,7 @@ It may be even better for privacy to switch Personal and Work profile below. Not
 
 UDP in Personal Profile won't work in this configuration.
 
-- Personal Profile DNS over UDP or TCP requests at port 53 or 853 -> TrackerControl port forwarding to port 5354 -> Personal Profile InviZible Pro DNSCrypt server at port 5354 outbound through Socks5 proxy at port 9051 -> Personal Profile InviZible Pro Tor Socks5 server at port 9051 -> outbound through Socks5 proxy at port 1080 -> Socks5 Sock5 server at port 1080 -> Work Profile VPN -> DNS resolved
+- Personal Profile DNS over UDP or TCP requests at port 53 -> TrackerControl port forwarding to port 5354 -> Personal Profile InviZible Pro DNSCrypt server at port 5354 outbound through Socks5 proxy at port 9051 -> Personal Profile InviZible Pro Tor Socks5 server at port 9051 -> outbound through Socks5 proxy at port 1080 -> Socks5 Sock5 server at port 1080 -> Work Profile VPN -> DNS resolved
 - Personal Profile other requests -> TrackerControl outbound through Socks5 proxy at port 9051 -> Personal Profile InviZible Pro Tor Socks5 server at port 9051 -> outbound through Socks5 proxy at port 1080 -> Socks5 Sock5 server at port 1080 -> Work Profile VPN -> outbound
 - Work Profile requests -> Work Profile VPN -> Outbound
 
