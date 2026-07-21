@@ -4,3 +4,4 @@ Here's my current network connection configurations on Android 16 utilizing Insu
 
 For app debloating, which is also important for privacy, refer to my [**Samsung-Android-Debloat-List**](https://github.com/Willie169/Samsung-Android-Debloat-List) repo. Even if you are not using Samsung phone, many parts of the repo still apply.
 
+### TODO
